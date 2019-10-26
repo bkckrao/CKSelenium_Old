@@ -1,0 +1,20 @@
+
+<suite name="Suite One" > <!-- any name not related to any thing -->
+ <test name="Test One" >  <!-- any name not related to any thing -->
+ 
+ <parameter name = "selenium.url" value = "https://login.naukri.com" />
+ <!--  <parameter name = "pathoftestdata" value = "D://ck//sel//sel//Naukri_test_data.xlsx" /> -->
+ <parameter name = "pathoftestdata" value = "C://Selenium//Naukri_test_data.xls"/>
+ 
+ 
+  <classes>
+   <class name="ck.scripts.Naukripageobj" /> <!-- class name along with package like package.classname -->
+   
+   <methods>
+   <include name="Naukri_ProfileUpdate" /> <!-- Method name -->
+   <exclude name="Secondtestcase" /> <!-- putting in exclude tag will omit from the execution -->
+   </methods>
+   
+  </classes>
+ </test>
+</suite>
