@@ -10,14 +10,21 @@ Note the tools we are using:
 3. TestNG
 4. Maven
 5. Excel Plugins to read the data from Excel
-6. Basic HTML to get the reports 
+6. HTML to visualize the reports 
 
-# How to use this framework:
+# How to use CKSelenium framework:
+ Download the jar file **CKFramework.jar** , **pom.xml** from the above repository
+ Create a fresh New Maven project in Eclipse.
+
+
 ### Adding Jar file to the project:
-Download the jar file **CKFramework.jar** from the above repository and add this jar file to your Eclipse build path like below:
+Add the download the jar file **CKFramework.jar** to your Eclipse build path like below:
 
 Right click on the Project --> Build Path --> Configure Build Path --> Java Buildpath --> Add External JARs and select the downloaded jar file *CKFramework.jar* and Refresh the project.
-Now, we are done with adding framework to our project.
+### Changing the pom file:
+do not touch the first section with groupid, artifactId, version tags that repersents your project name. Replace the next sections that installs dependancies, plugins and save.
+you can observe the % of your repo downloading dependancies at the bottom down of eclipse.
+Now, we are done with adding framework to our project, downloading dependancies from pom file.
 
 ### How to write the elements based on the Jar file:
 
